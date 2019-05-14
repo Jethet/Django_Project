@@ -1,5 +1,7 @@
 Downloaded for this tutorial: virtual environment wrapper (virtualenvwrapper)
 and XAMPP.
+For this project, the database mysql is used. In the settings.py file, the
+
 
 Django enables doing things in the best way possible. It is very secure and
 scalable, and versatile.
@@ -18,3 +20,16 @@ Django uses the Model Template View pattern:
 In Django, a website or project can have just one or various apps (for example,
 a website with a client app, a store app, etc.). This way, apps can be moved to
 other projects and used by other developers.
+
+
+NO IDEA WHAT THIS IS: came with Homebrew
+
+openssl is keg-only, which means it was not symlinked into /usr/local,
+because Apple has deprecated use of OpenSSL in favor of its own TLS and crypto libraries.
+
+If you need to have openssl first in your PATH run:
+  echo 'export PATH="/usr/local/opt/openssl/bin:$PATH"' >> ~/.bash_profile
+
+For compilers to find openssl you may need to set:
+  export LDFLAGS="-L/usr/local/opt/openssl/lib"
+  export CPPFLAGS="-I/usr/local/opt/openssl/include"
