@@ -1,0 +1,17 @@
+Django makes you do things in the best way possible. It is very secure and
+scalable, and versatile.
+Design pattern is influenced by MVC: Model View Controller which separates parts
+of the app and puts handling of incoming requests etc. into the controller, the
+data access into the model and the user interface component into the view.
+In Django, the controller is handled by the framework itself.
+Django uses the Model Template View pattern:
+
+  Model: data access layer; anything to do with interacting, relating and
+         validating the data
+  Template: presentation layer; presentation-related decisions
+  View: business logic layer; accesses the model and displays the
+        appropriate template
+
+In Django, a website or project can have just one or various apps (for example,
+a website with a client app, a store app, etc.). This way, apps can be moved to
+other projects and used by other developers.
