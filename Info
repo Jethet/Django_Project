@@ -1,4 +1,7 @@
-Django makes you do things in the best way possible. It is very secure and
+Downloaded for this tutorial: virtual environment wrapper (virtualenvwrapper)
+and XAMPP.
+
+Django enables doing things in the best way possible. It is very secure and
 scalable, and versatile.
 Design pattern is influenced by MVC: Model View Controller which separates parts
 of the app and puts handling of incoming requests etc. into the controller, the
