@@ -1,16 +1,21 @@
-Downloaded for this tutorial: virtual environment wrapper (virtualenvwrapper)
-and XAMPP.
-For this project, the database mysql is used. In the settings.py file, the
+Web framework: predefined code that can be used to solve a specific problem (for
+example, tools and libraries). A framework simplifies common web development
+operations. It is a set of APIs (Application Programming Interface).
+ -  Django has Object-Relational Mapper (ORM) to define data models entirely in
+    Python.
+ -  Django also offers tight integration between components, that have been
+    developed by the Django team.
+ -  Automatic Administration Interface: Django provides a powerful and production-
+    ready interface that can be used to manage content on a site.
+ -  Multi-Lingual Support plus local specific formatting of time, date, etc.
 
+Django uses MVC (Model View Controller), a software design pattern for developing
+web applications which breaks the code into segments:
+  Model:   storing and maintenance of data
+  View:    displaying the requested portion of data to the user
+  Controller: regulating the interactions between mode and view
 
-Django enables doing things in the best way possible. It is very secure and
-scalable, and versatile.
-Design pattern is influenced by MVC: Model View Controller which separates parts
-of the app and puts handling of incoming requests etc. into the controller, the
-data access into the model and the user interface component into the view.
-In Django, the controller is handled by the framework itself.
 Django uses the Model Template View pattern:
-
   Model: data access layer; anything to do with interacting, relating and
          validating the data
   Template: presentation layer; presentation-related decisions
