@@ -14,13 +14,16 @@ web applications which breaks the code into segments:
   Model:   storing and maintenance of data
   View:    displaying the requested portion of data to the user
   Controller: regulating the interactions between mode and view
+==> the controller handles requests and forwards these to model and view.
 
-Django uses the Model Template View pattern:
-  Model: data access layer; anything to do with interacting, relating and
+NOTE: in Django, this is used as MVT: the Model View Template because Django
+      itself takes care of the Controller part:
+  -  Model: data access layer; anything to do with interacting, relating and
          validating the data
-  Template: presentation layer; presentation-related decisions
-  View: business logic layer; accesses the model and displays the
-        appropriate template
+  -  View: business logic layer; accesses the model and displays the
+        appropriate template; view accesses both the model and the template
+  -  Template: presentation layer; presentation-related decisions; a HTML
+     file mixed with Django Template Language (DTL).
 
 In Django, a website or project can have just one or various apps (for example,
 a website with a client app, a store app, etc.). This way, apps can be moved to
