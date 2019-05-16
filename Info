@@ -32,6 +32,9 @@ where the sections of code that are SHARED are stored. The UNIQUE html code is
 stored in the html templates such as home.html and about.html. The base.html is
 the PARENT template and from this the other templates will inherit shared code.
 
+IMPORTANT: AVOID HAVING TO CHANGE CODE IN MULTIPLE FILES (for example urls) BY
+USING TEMPLATE INHERITANCE, URLS DEFINED IN THE url.py FILE ETC.
+
 GENERAL
 Web framework: predefined code that can be used to solve a specific problem (for
 example, tools and libraries). A framework simplifies common web development
