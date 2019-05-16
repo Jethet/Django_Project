@@ -13,6 +13,14 @@ In de tutorial wordt het file manage.py (dat in webblog zit) niet gewijzigd.
    configuratie wordt door Django automatisch opgezet (in de tutorial wordt niets
    gewijzigd in wsgi.py)
 
+There are two files with urls: one in the webblog folder and one in the blog folder.
+When entering the http://127.0.0.1:800/ address (which is the same as localhost!),
+first the webblog urls.py file is checked. The part of the http address that is
+found in this urls file gets 'chopped off' and the remaining part is searched in
+the blog url file. Example: http://127.0.0.1:800/blog/about will first look at
+'blog' in the webblog urls. This is found and leads to the blogs.url file in
+the blog folder. The http address that is sent is ONLY 'about', because 'blog'
+has already been found.
 
 
 Web framework: predefined code that can be used to solve a specific problem (for
@@ -45,6 +53,7 @@ NOTE: in Django, this is used as MVT: the Model View Template because Django
 In Django, a website or project can have just one or various apps (for example,
 a website with a client app, a store app, etc.). This way, apps can be moved to
 other projects and used by other developers.
+
 
 ================================================================================
 NO IDEA WHAT THIS IS: came with Homebrew (text copied from command line):
