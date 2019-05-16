@@ -24,4 +24,4 @@ def home(request):
 
 # This function handles the logic for the 'about'page of the blog:
 def about(request):
-    return render(request, 'blog/about.html')
+    return render(request, 'blog/about.html', {'title': 'About'})
