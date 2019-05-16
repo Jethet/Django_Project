@@ -46,8 +46,8 @@ In Django, a website or project can have just one or various apps (for example,
 a website with a client app, a store app, etc.). This way, apps can be moved to
 other projects and used by other developers.
 
-
-NO IDEA WHAT THIS IS: came with Homebrew
+================================================================================
+NO IDEA WHAT THIS IS: came with Homebrew (text copied from command line):
 
 openssl is keg-only, which means it was not symlinked into /usr/local,
 because Apple has deprecated use of OpenSSL in favor of its own TLS and crypto libraries.
