@@ -1,5 +1,19 @@
 LET OP: in de video is de hoofdfolder 'desktop' en dat is bij mij 'WebBlog'.
 In de video heet het project 'django_project' en dat is bij mij 'webblog'.
+De folder WebBlog heeft een subfolder webblog met daarin ook een subfolder die
+webblog heet. Om de server te starten (manage.py runserver) moet de folder
+WebBlog/webblog worden gebruikt en niet WebBlog/webblog/webblog.
+
+Projectstructuur:
+In de tutorial wordt het file manage.py (dat in webblog zit) niet gewijzigd.
+-  settings.py kan gewijzigd worden om settings aan te passen.
+-  urls.py bepaalt urls waar de gebruiker naartoe gestuurd wordt
+   (de 'routes').
+-  wsgi.py bepaalt hoe de Python web-applicatie communiceert met de server. Deze
+   configuratie wordt door Django automatisch opgezet (in de tutorial wordt niets
+   gewijzigd in wsgi.py)
+
+
 
 Web framework: predefined code that can be used to solve a specific problem (for
 example, tools and libraries). A framework simplifies common web development
