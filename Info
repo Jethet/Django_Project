@@ -16,13 +16,23 @@ In de tutorial wordt het file manage.py (dat in webblog zit) niet gewijzigd.
 There are two files with urls: one in the webblog folder and one in the blog folder.
 When entering the http://127.0.0.1:800/ address (which is the same as localhost!),
 first the webblog urls.py file is checked. The part of the http address that is
-found in this urls file gets 'chopped off' and the remaining part is searched in
+found in this urls file gets 'chopped off' and the remaining part is passed into
 the blog url file. Example: http://127.0.0.1:800/blog/about will first look at
-'blog' in the webblog urls. This is found and leads to the blogs.url file in
-the blog folder. The http address that is sent is ONLY 'about', because 'blog'
-has already been found.
+'blog' in the webblog urls. This is found and matches the views.about function,
+which leads to the blogs.url file in the blog folder. The http address that is
+sent is ONLY 'about', because 'blog' has already been found. In the views there
+is an 'about' function (def about(request):) which returns an HttpResponse.
 
+The html for the blog is stored in a folder called templates. Within that folder,
+there is a folder for the blog app. This contains the html for the blog pages.
 
+With template inheritance, duplication of code can be avoided so that changes
+do not have to be made in several pages. This is done with the base.html file
+where the sections of code that are SHARED are stored. The UNIQUE html code is
+stored in the html templates such as home.html and about.html. The base.html is
+the PARENT template and from this the other templates will inherit shared code.
+
+GENERAL
 Web framework: predefined code that can be used to solve a specific problem (for
 example, tools and libraries). A framework simplifies common web development
 operations. It is a set of APIs (Application Programming Interface).
