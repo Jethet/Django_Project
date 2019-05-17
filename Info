@@ -44,7 +44,10 @@ CREATE USER for admin webpage:
 $ python3 manage.py createsuperuser
 To be able to use the superuser command, FIRST create a database by migrating,
 which will create a number of default tables such as the auth_user table, which
-is needed to use the createsuperuser command.
+is needed to use the createsuperuser command. Dit gaat met makemigrations:
+MIGRATION COMMANDS:
+$ python3 manage.py makemigrations   to prepare the migration
+$ python3 manage.py migrate       to actually run the migration
 
 
 There are two files with urls: one in the webblog folder and one in the blog folder.
@@ -68,6 +71,10 @@ the PARENT template and from this the other templates will inherit shared code.
 
 IMPORTANT: AVOID HAVING TO CHANGE CODE IN MULTIPLE FILES (for example urls) BY
 USING TEMPLATE INHERITANCE, URLS DEFINED IN THE url.py FILE ETC.
+
+ORM: Object Relational Mapper. This is built into Django and allows access to
+the database (query) in an easy, object-based manner. It allows for using different
+databases without having to change the code.
 
 GENERAL
 Web framework: predefined code that can be used to solve a specific problem (for
@@ -114,3 +121,6 @@ If you need to have openssl first in your PATH run:
 For compilers to find openssl you may need to set:
   export LDFLAGS="-L/usr/local/opt/openssl/lib"
   export CPPFLAGS="-I/usr/local/opt/openssl/include"
+
+webpage admin: Jethet, textual.infomail@gmail.com, Django@2019
+TestUser met Test@2019
