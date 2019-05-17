@@ -13,6 +13,40 @@ In de tutorial wordt het file manage.py (dat in webblog zit) niet gewijzigd.
    configuratie wordt door Django automatisch opgezet (in de tutorial wordt niets
    gewijzigd in wsgi.py)
 
+COMMANDS:
+VENV:
+To create a venv you must be in the main project folder (NOT the folder for your app).
+For this blog project, the main folder is WebBlog and the folder 'blog' is the app
+folder. For a venv use the command: python3 -m venv <NAME>
+==> it is customary to use the name 'venv' so that makes the full command:
+python3 -m venv venv
+To run the venv use: source venv/bin/activate (name is venv here).
+To deactivate the venv use: deactivate.
+NEVER add files to the venv folder!
+The venv folder should show up in your main project folder. You can add it to a
+.gitignore file (also in this main project folder) by putting in the .gitignore:
+.venv
+venv/
+.env
+env/
+You can also add __pycache__/ and db.sqlite3 to the .gitignore to stop these from
+syncing with GitHub.
+RUN THE SERVER:
+$ python3 manage.py runserver ==> to quit the server: Ctrl c
+INSTALL DJANGO:
+pip3 install django
+COPY VENV SET-UP TO OTHER PROJECT:
+$ pip3 freeze > requirements.txt
+This copies all dependencies from the venv application. To paste in project:
+$ pip3 install -r requirements.txt
+The requirements.txt file should NOT be added to .gitignore.
+CREATE USER for admin webpage:
+$ python3 manage.py createsuperuser
+To be able to use the superuser command, FIRST create a database by migrating,
+which will create a number of default tables such as the auth_user table, which
+is needed to use the createsuperuser command.
+
+
 There are two files with urls: one in the webblog folder and one in the blog folder.
 When entering the http://127.0.0.1:800/ address (which is the same as localhost!),
 first the webblog urls.py file is checked. The part of the http address that is
