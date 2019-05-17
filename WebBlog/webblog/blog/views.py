@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .models import Post
 
 posts = [
     {
@@ -18,7 +19,7 @@ posts = [
 # This function handles the traffic that lands on the homepage of the blog:
 def home(request):
     context = {
-        'posts': posts
+        'posts': Post.objects.all()
     }
     return render(request, 'blog/home.html', context)
 
