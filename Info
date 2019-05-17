@@ -47,8 +47,9 @@ which will create a number of default tables such as the auth_user table, which
 is needed to use the createsuperuser command. Dit gaat met makemigrations:
 MIGRATION COMMANDS:
 $ python3 manage.py makemigrations   to prepare the migration
-$ python3 manage.py migrate       to actually run the migration
+$ python3 manage.py migrate       to actually RUN the migration
 
+pk = primary key (user.pk is the same as user.id)
 
 There are two files with urls: one in the webblog folder and one in the blog folder.
 When entering the http://127.0.0.1:800/ address (which is the same as localhost!),
