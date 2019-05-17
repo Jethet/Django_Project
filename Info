@@ -4,6 +4,9 @@ De folder WebBlog heeft een subfolder webblog met daarin ook een subfolder die
 webblog heet. Om de server te starten (manage.py runserver) moet de folder
 WebBlog/webblog worden gebruikt en niet WebBlog/webblog/webblog.
 
+NB: when using a . before a filename (such as .models) it means the file is in
+the SAME DIRECTORY.
+
 Projectstructuur:
 In de tutorial wordt het file manage.py (dat in webblog zit) niet gewijzigd.
 -  settings.py kan gewijzigd worden om settings aan te passen.
