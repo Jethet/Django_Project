@@ -51,6 +51,13 @@ is needed to use the createsuperuser command. Dit gaat met makemigrations:
 MIGRATION COMMANDS:
 $ python3 manage.py makemigrations   to prepare the migration
 $ python3 manage.py migrate       to actually RUN the migration
+CREATE APP:
+$ python3 manage.py startapp <name>   ===>> after creating a new app, ADD IT TO
+THE INSTALLED APPs LIST IMMEDIATELY (under Installed_Apps in project settings.py).
+You need a Config name and that will be in the apps.py file in the newly created
+app (for example, BlogConfig or UsersConfig). The code is 'blog.apps.BlogConfig'
+or 'users.blog.UsersConfig' in these examples.
+
 
 pk = primary key (user.pk is the same as user.id)
 
