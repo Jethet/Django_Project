@@ -58,7 +58,6 @@ You need a Config name and that will be in the apps.py file in the newly created
 app (for example, BlogConfig or UsersConfig). The code is 'blog.apps.BlogConfig'
 or 'users.blog.UsersConfig' in these examples.
 
-
 pk = primary key (user.pk is the same as user.id)
 
 There are two files with urls: one in the webblog folder and one in the blog folder.
@@ -86,6 +85,11 @@ USING TEMPLATE INHERITANCE, URLS DEFINED IN THE url.py FILE ETC.
 ORM: Object Relational Mapper. This is built into Django and allows access to
 the database (query) in an easy, object-based manner. It allows for using different
 databases without having to change the code.
+
+VIEWS:
+Django has many views installed, for example login and registration for sites.
+When importing views (from django.contrib.auth import views) always give these
+a name: auth_views or user_views etc.
 
 GENERAL
 Web framework: predefined code that can be used to solve a specific problem (for
