@@ -96,6 +96,17 @@ When generating a new model, this has to be implemented by making a migration an
 subsequently running the migration. A new model should also be added to the admin.py
 file in the app where the new model is created.
 
+PICTURES:
+When using a picture, for example a profile picture for a user account, Django
+automatically creates a folder in the project tree for the pictures (in this case
+it would be profile_pics).
+MEDIA:
+It is good practice to create a MEDIA_URL and MEDIA_ROOT in the general settings.
+The ROOT should be the full path to the directory where uploaded files should be
+stored. For performance reasons, these files are stored on the file system and
+not in the database. The URL is the public url of the directory where these files
+are stored.
+
 GENERAL
 Web framework: predefined code that can be used to solve a specific problem (for
 example, tools and libraries). A framework simplifies common web development
@@ -124,7 +135,7 @@ NOTE: in Django, this is used as MVT: the Model View Template because Django
   -  Template: presentation layer; presentation-related decisions; a HTML
      file mixed with Django Template Language (DTL).
 
-In Django, a website or project can have just one or various apps (for example,
+In Django, a website or project can have one or various apps (for example,
 a website with a client app, a store app, etc.). This way, apps can be moved to
 other projects and used by other developers.
 
@@ -133,7 +144,7 @@ other projects and used by other developers.
 NO IDEA WHAT THIS IS: came with Homebrew (text copied from command line):
 
 openssl is keg-only, which means it was not symlinked into /usr/local,
-because Apple has deprecated use of OpenSSL in favor of its own TLS and crypto libraries.
+because Apple has deprecated use of OpenSSL in favour of its own TLS and crypto libraries.
 
 If you need to have openssl first in your PATH run:
   echo 'export PATH="/usr/local/opt/openssl/bin:$PATH"' >> ~/.bash_profile
