@@ -94,7 +94,7 @@ a name: auth_views or user_views etc.
 MODELS:
 When generating a new model, this has to be implemented by making a migration and
 subsequently running the migration. A new model should also be added to the admin.py
-file in the app where the new model is created. 
+file in the app where the new model is created.
 
 GENERAL
 Web framework: predefined code that can be used to solve a specific problem (for
@@ -142,6 +142,8 @@ For compilers to find openssl you may need to set:
   export LDFLAGS="-L/usr/local/opt/openssl/lib"
   export CPPFLAGS="-I/usr/local/opt/openssl/include"
 
+
+To get to the interactive console (command line) run: python3 manage.py shell
 webpage admin: Jethet, textual.infomail@gmail.com, Django@2019
 TestUser met Test@2019
 NewUser met Testing321
