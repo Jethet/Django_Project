@@ -91,6 +91,11 @@ Django has many views installed, for example login and registration for sites.
 When importing views (from django.contrib.auth import views) always give these
 a name: auth_views or user_views etc.
 
+MODELS:
+When generating a new model, this has to be implemented by making a migration and
+subsequently running the migration. A new model should also be added to the admin.py
+file in the app where the new model is created. 
+
 GENERAL
 Web framework: predefined code that can be used to solve a specific problem (for
 example, tools and libraries). A framework simplifies common web development
