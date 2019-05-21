@@ -9,7 +9,7 @@
         <p class="text-secondary">{{ user.email }}</p>
       </div>
     </div>
-    <form method="POST" enctype="multipart/form-data"> <!--IMPORTANT enctype attribute is needed to process pictures--!>
+    <form method="POST" enctype="multipart/form-data"> <!-- IMPORTANT enctype attribute is needed to process pictures -->
       {% csrf_token %}
       <fieldset class="form-group">
         <legend class="border-bottom mb-4">Profile Info</legend>
