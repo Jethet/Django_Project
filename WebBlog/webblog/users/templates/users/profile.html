@@ -9,14 +9,15 @@
         <p class="text-secondary">{{ user.email }}</p>
       </div>
     </div>
-    <form method="POST">
+    <form method="POST" enctype="multipart/form-data"> <!--IMPORTANT enctype attribute is needed to process pictures--!>
       {% csrf_token %}
       <fieldset class="form-group">
-        <legend class="border-bottom mb-4">Join today</legend>
-        {{ form|crispy }}
+        <legend class="border-bottom mb-4">Profile Info</legend>
+        {{ u_form|crispy }}
+        {{ p_form|crispy }}
       </fieldset>
       <div class="form-group">
-        <button class="btn btn-outline-info" type="submit">Sign up</button>
+        <button class="btn btn-outline-info" type="submit">Update</button>
       </div>
     </form>
   </div>
