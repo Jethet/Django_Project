@@ -1,14 +1,16 @@
 from django.shortcuts import render
-from django.views.generic import ListView
+from django.views.generic import ListView, DetailView
 from .models import Post
 
 class PostListView(ListView):
     model = Post
     template_name = 'blog/home.html'   #<app>/<model>_<viewtype>.html naming convention
+    context_object_name = 'posts'
+    ordering = ['-date_posted']    # this ensures newest post comes first: minus sign
 
+class PostDetailView(DetailView):
+    model = Post
 
-def about(request):
-    return render(request, 'blog/about.html', {'title': 'About'})
 
 """
 ==> These are FUNCTION-BASED VIEWS for 'home' and 'about'.
