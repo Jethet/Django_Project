@@ -4,8 +4,11 @@ from .models import Post
 
 class PostListView(ListView):
     model = Post
+    template_name = 'blog/home.html'   #<app>/<model>_<viewtype>.html naming convention
 
 
+def about(request):
+    return render(request, 'blog/about.html', {'title': 'About'})
 
 """
 ==> These are FUNCTION-BASED VIEWS for 'home' and 'about'.
