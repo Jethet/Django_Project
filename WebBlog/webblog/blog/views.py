@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.views.generic import ListView, DetailView
+from django.views.generic import ListView, DetailView, CreateView
 from .models import Post
 
 class PostListView(ListView):
@@ -11,8 +11,12 @@ class PostListView(ListView):
 class PostDetailView(DetailView):
     model = Post
 
-def about(request):
-    return render(request, 'blog/about.html', {'title': 'About'})
+class PostCreateView(CreateView):
+    model = Post
+    fields = ['title', 'content']
+
+
+
 
 """
 ==> These are FUNCTION-BASED VIEWS for 'home' and 'about'.
@@ -22,15 +26,14 @@ def about(request):
     the tutorial (tutorial 10).
 
 ==> This function handles the traffic that lands on the homepage of the blog:
-
+"""
 def home(request):
     context = {
         'posts': Post.objects.all()
     }
     return render(request, 'blog/home.html', context)
 
-==> This function handles the logic for the 'about'page of the blog:
+# This function handles the logic for the 'about'page of the blog:
 
 def about(request):
     return render(request, 'blog/about.html', {'title': 'About'})
-"""
