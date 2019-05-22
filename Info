@@ -132,12 +132,16 @@ NOTE: in Django, this is used as MVT: the Model View Template because Django
          validating the data
   -  View: business logic layer; accesses the model and displays the
         appropriate template; view accesses both the model and the template
+        Django provides various views: ListView, DetailView, CreateView,
+        DeleteView etc.
   -  Template: presentation layer; presentation-related decisions; a HTML
      file mixed with Django Template Language (DTL).
 
 In Django, a website or project can have one or various apps (for example,
 a website with a client app, a store app, etc.). This way, apps can be moved to
 other projects and used by other developers.
+
+
 
 
 ================================================================================
