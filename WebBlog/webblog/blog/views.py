@@ -8,6 +8,7 @@ class PostListView(ListView):
     template_name = 'blog/home.html'   #<app>/<model>_<viewtype>.html naming convention
     context_object_name = 'posts'
     ordering = ['-date_posted']    # this ensures newest post comes first: minus sign
+    paginate_by = 2
 
 class PostDetailView(DetailView):
     model = Post
