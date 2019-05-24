@@ -184,6 +184,8 @@ For compilers to find openssl you may need to set:
 TO RUN SERVER: make sure you are in folder webblog and first run venv (in
 folder WebBlog).
 
+| = filter in Django html --> example in code: {% elif num > page_obj.number|add: '-3' %}
+
 
 To get to the interactive console (command line) run: python3 manage.py shell
 webpage admin: Jethet, textual.infomail@gmail.com, Django@2019
