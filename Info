@@ -180,6 +180,9 @@ If you need to have openssl first in your PATH run:
 For compilers to find openssl you may need to set:
   export LDFLAGS="-L/usr/local/opt/openssl/lib"
   export CPPFLAGS="-I/usr/local/opt/openssl/include"
+===============================================================================
+TO RUN SERVER: make sure you are in folder webblog and first run venv (in
+folder WebBlog).
 
 
 To get to the interactive console (command line) run: python3 manage.py shell
