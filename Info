@@ -192,7 +192,7 @@ To get to the interactive console (command line) run: python3 manage.py shell
 webpage admin: Jethet, textual.infomail@gmail.com, Django@2019
 TestUser met Test@2019
 NewUser met Testing321
-
+empty.mailbox2019@gmail.com
 Email server:
 first enable less secure apps in Gmail (account/Security/enable less secure apps)
 Then in settings:
