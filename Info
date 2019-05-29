@@ -189,10 +189,11 @@ folder WebBlog).
 | = filter in Django html --> example in code: {% elif num > page_obj.number|add: '-3' %}
 
 To get to the interactive console (command line) run: python3 manage.py shell
-webpage admin: Jethet, textual.infomail@gmail.com, Django@2019
+webpage admin: Jethet, original textual.infomail@gmail.com, Django@2019,
+changed to empty.mailbox2019@gmail.com with django@2019 (password reset test)
 TestUser met Test@2019
 NewUser met Testing321
-empty.mailbox2019@gmail.com
+empty.mailbox2019@gmail.com  Dj@Jaar
 Email server:
 first enable less secure apps in Gmail (account/Security/enable less secure apps)
 Then in settings:
