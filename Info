@@ -4,6 +4,12 @@ De folder WebBlog heeft een subfolder webblog met daarin ook een subfolder die
 webblog heet. Om de server te starten (manage.py runserver) moet de folder
 WebBlog/webblog worden gebruikt en niet WebBlog/webblog/webblog.
 
+INSTALLED PACKAGES ETC.:
+gunicorn
+heroku
+Use pip3 freeze to get an overview of what should be added to the requirements.txt
+file.
+
 NB: when using a . before a filename (such as .models) it means the file is in
 the SAME DIRECTORY.
 
