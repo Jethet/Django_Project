@@ -195,6 +195,8 @@ EMAIL_USE_TLS= True
 EMAIL_PORT= 587
 
 HEROKU: app name is djang2019app
+https://djang2019app.herokuapp.com/ can be pasted in browser OR use command:
+heroku open (??) Should be in the project's directory 
 
 ================================================================================
 NO IDEA WHAT THIS IS: came with Homebrew (text copied from command line):
