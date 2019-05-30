@@ -174,21 +174,6 @@ True
 
 
 
-================================================================================
-NO IDEA WHAT THIS IS: came with Homebrew (text copied from command line):
-
-openssl is keg-only, which means it was not symlinked into /usr/local,
-because Apple has deprecated use of OpenSSL in favour of its own TLS and crypto libraries.
-
-If you need to have openssl first in your PATH run:
-  echo 'export PATH="/usr/local/opt/openssl/bin:$PATH"' >> ~/.bash_profile
-
-For compilers to find openssl you may need to set:
-  export LDFLAGS="-L/usr/local/opt/openssl/lib"
-  export CPPFLAGS="-I/usr/local/opt/openssl/include"
-===============================================================================
-
-
 TO RUN SERVER: make sure you are in folder webblog and first run venv (in
 folder WebBlog).
 
@@ -208,3 +193,19 @@ EMAIL_HOST_USER= 'youremail@gmail.com'
 EMAIL_HOST_PASSWORD= 'password'
 EMAIL_USE_TLS= True
 EMAIL_PORT= 587
+
+HEROKU: app name is djang2019app
+
+================================================================================
+NO IDEA WHAT THIS IS: came with Homebrew (text copied from command line):
+
+openssl is keg-only, which means it was not symlinked into /usr/local,
+because Apple has deprecated use of OpenSSL in favour of its own TLS and crypto libraries.
+
+If you need to have openssl first in your PATH run:
+  echo 'export PATH="/usr/local/opt/openssl/bin:$PATH"' >> ~/.bash_profile
+
+For compilers to find openssl you may need to set:
+  export LDFLAGS="-L/usr/local/opt/openssl/lib"
+  export CPPFLAGS="-I/usr/local/opt/openssl/include"
+===============================================================================
