@@ -194,9 +194,13 @@ EMAIL_HOST_PASSWORD= 'password'
 EMAIL_USE_TLS= True
 EMAIL_PORT= 587
 
+Log in Heroku: heroku login (text appears: 'press any key to open up the browser
+to login or q to exit')
+This brings you to a browser screen where you can login to Heroku.
 HEROKU: app name is djang2019app
 https://djang2019app.herokuapp.com/ can be pasted in browser OR use command:
-heroku open (??) Should be in the project's directory 
+heroku open (??) Should be in the project's directory
+
 
 ================================================================================
 NO IDEA WHAT THIS IS: came with Homebrew (text copied from command line):
