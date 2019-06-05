@@ -208,3 +208,13 @@ The tutorial I have to do now is on deploying the site online with Heroku. The p
 
 May 31:
 The tutorial to deploy the web app with Heroku is on hold for now. Since the maker of the tutorial uses environment variables and I do not know about these, it will have to wait until I understand this better. I did create the Heroku account and went through the tutorial up to approx. 27.30 min. I have left it there: the webblog app is working when I run it locally so that is fine for now. The deployment can wait. I will continue with the RealPython Django tutorials.
+
+June 5:
+The last couple of days have been used to think about the people who would be interested in the website I want to build. What are they looking for and what are their priorities? I have created 7 personas (is that too many? too few?).
+The following priorities for the focus of the website information came forward (with points calculated on a rating from 5 (important) to 1):
+1 - Organic, local and sustainable/no packaging (38)
+2 - Health and dietary products (37)
+3 - Price level and special offers (14)
+4 - Quality food and trends (11)
+5 - Convenience (7)
+This does not include the standard information any user will expect: details about the shop (address etc.), opening hours and so on. This could be elaborated (easily accessible, for example).
