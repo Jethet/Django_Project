@@ -225,3 +225,7 @@ Travelling and coding does not work well this time. I have tried to practice a b
 June 14:
 I decided to go through some tutorials that do not require me to code along, because it is not really helpful to work on a small screen with code as well as a video tutoria at the same time. The RealPython tutorial on virtual environments was useful and has confirmed my understanding of the concept and I feel that I am able to work with venv's.
 The second tutorial was on Pylint and how to use a linter when writing code. Very useful. I would like to find out how to get the pylint comments into the actual code. Some of the 'corrections' are about not having comments in the code, which is a bit strange because that is not a code error but more something to do with good practices. Comments are important and I know that. It is not easy to write good comments, though. You need to be clear on what your code should achieve, and that is not always simple.
+
+June 16:
+Without a project or course to work on, things get out of hand easily. It is good to look at things that have been on my list (like pylint) but at the same time I feel like there is no progress and that I am just 'doing stuff'. I think this also has to do with the fact that in my mind I was still more or less waiting for something to happen with the 'Summer of Code'. It is clear that nothing will come of that so I need to kick myself into a direction and get going.
+I have decided to go for web development. 
