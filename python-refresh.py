@@ -14,3 +14,7 @@ print(example)
 
 for x in example:
     print(x)
+
+example = {}
+example[1] = "whatever"
+print(example)
