@@ -1,3 +1,3 @@
 # Django_Project
 
-This repository is used to keep files related to learning Django.
+Udemy course Django 2.2 and Python - Web Developers Bootcamp
