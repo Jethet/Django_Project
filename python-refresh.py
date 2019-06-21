@@ -7,3 +7,10 @@ def example(string= 'Mark', number=45):
     return string, number
 
 print(example())
+
+example = [1,2,3]
+del(example[0])
+print(example)
+
+for x in example:
+    print(x)
