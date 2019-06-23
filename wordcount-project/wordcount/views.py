@@ -10,5 +10,5 @@ def homepage(request):
 def count(request):
     # this gets the text that is entered by the user:
     fulltext = request.GET['fulltext']
-    print(fulltext)
-    return render(request, 'count.html')
+    # this sends the text to the count page:
+    return render(request, 'count.html', {'fulltext':fulltext})
