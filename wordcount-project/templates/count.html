@@ -4,4 +4,11 @@
 {{ fulltext }}
 
 <h1> Word Count:</h1>
-{{ worddictionary}}
+
+{% for word, counttotal in worddictionary %}
+
+{{ word }}
+<br>
+{{ counttotal}}
+<br>
+{% endfor %}

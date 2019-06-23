@@ -23,4 +23,4 @@ def count(request):
 
     # this sends the text to the count page to be shown
     # this also includes the counter of the separate words
-    return render(request, 'count.html', {'fulltext':fulltext, 'count':len(wordlist), 'worddictionary'=worddictionary})
+    return render(request, 'count.html', {'fulltext':fulltext, 'count':len(wordlist), 'worddictionary'=worddictionary.items()})
