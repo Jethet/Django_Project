@@ -12,5 +12,15 @@ def count(request):
     fulltext = request.GET['fulltext']
 
     wordlist = fulltext.split()
-    # this sends the text to the count page:
-    return render(request, 'count.html', {'fulltext':fulltext, 'count':len(wordlist)})
+    # count the number of times a word appears in the text:
+    worddictionary
+    for word in wordlist:
+        if word in worddictionary:
+            worddictionary[word] += 1
+        else:
+            worddictionary[word] = 1
+
+
+    # this sends the text to the count page to be shown
+    # this also includes the counter of the separate words
+    return render(request, 'count.html', {'fulltext':fulltext, 'count':len(wordlist), 'worddictionary'=worddictionary})
