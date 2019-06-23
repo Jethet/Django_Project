@@ -8,4 +8,7 @@ def homepage(request):
     return render(request, 'home.html')
 
 def count(request):
+    # this gets the text that is entered by the user:
+    fulltext = request.GET['fulltext']
+    print(fulltext)
     return render(request, 'count.html')
