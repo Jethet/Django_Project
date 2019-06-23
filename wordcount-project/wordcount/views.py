@@ -6,3 +6,6 @@ from django.shortcuts import render
 def homepage(request):
     # what is sent back to the user: the html for the homepage
     return render(request, 'home.html')
+
+def count(request):
+    return render(request, 'count.html')
