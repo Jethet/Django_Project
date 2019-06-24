@@ -19,7 +19,10 @@ def count(request):
     #    print("Please enter some text.")
     #    count(request)
 
-    wordlist = fulltext.split()
+    try:
+        wordlist = fulltext.split()
+    except UnboundLocalError:
+        wordlist = []
     # count the number of times a word appears in the text:
     worddictionary = {}
 
@@ -31,7 +34,7 @@ def count(request):
             # if not yet in dictionary, then add word to dictionary:
             worddictionary[word] = 1
 
-        sortedwords = sorted(worddictionary.items(), key=operator.itemgetter(1), reverse=True)
+    sortedwords = sorted(worddictionary.items(), key=operator.itemgetter(1), reverse=True)
 
     # this sends the text to the count page to be shown
     # this also includes the counter of the separate words
