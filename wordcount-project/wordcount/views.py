@@ -1,5 +1,6 @@
 from django.http import HttpResponse
 from django.shortcuts import render
+import operator
 
 # function for the home page, to be used in the url path for the home page when
 # the user requests the home page:
