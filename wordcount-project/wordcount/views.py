@@ -8,6 +8,9 @@ def homepage(request):
     # what is sent back to the user: the html for the homepage
     return render(request, 'home.html')
 
+def about(request):
+    return render(request, 'about.html')
+
 def count(request):
     # this gets the text that is entered by the user:
     fulltext = request.GET.get('fulltext')
@@ -29,6 +32,3 @@ def count(request):
     # this sends the text to the count page to be shown
     # this also includes the counter of the separate words
     return render(request, 'count.html', {'fulltext':fulltext, 'count':len(wordlist), 'sortedwords':sortedwords})
-
-def about(request):
-    return render(request, 'about.html')
