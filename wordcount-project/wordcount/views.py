@@ -23,6 +23,8 @@ def count(request):
             # if not yet in dictionary, then add word to dictionary:
             worddictionary[word] = 1
 
+        sortedwords = sorted(worddictionary.items(), key=operator.itemgetter(1), reverse=True)
+
     # this sends the text to the count page to be shown
     # this also includes the counter of the separate words
-    return render(request, 'count.html', {'fulltext':fulltext, 'count':len(wordlist), 'worddictionary':worddictionary.items()})
+    return render(request, 'count.html', {'fulltext':fulltext, 'count':len(wordlist), 'worddictionary':sortedwords})
