@@ -13,7 +13,7 @@ def count(request):
 
     wordlist = fulltext.split()
     # count the number of times a word appears in the text:
-    worddictionary
+    worddictionary#WHY IS THIS JUST THE VARIABLE AND NO {} ???
     for word in wordlist:
         if word in worddictionary:
             worddictionary[word] += 1
