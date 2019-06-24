@@ -15,6 +15,10 @@ def count(request):
     # this gets the text that is entered by the user:
     fulltext = request.GET.get('fulltext')
 
+    #if fulltext == ['']:
+    #    print("Please enter some text.")
+    #    count(request)
+
     wordlist = fulltext.split()
     # count the number of times a word appears in the text:
     worddictionary = {}
