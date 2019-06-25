@@ -15,14 +15,13 @@ def count(request):
     # this gets the text that is entered by the user:
     fulltext = request.GET.get('fulltext')
 
-    #if fulltext == ['']:
-    #    print("Please enter some text.")
-    #    count(request)
-
+    # to avoid error message when text field is left empty by user and there
+    # is no text to be counted, catch the error:
     try:
         wordlist = fulltext.split()
     except UnboundLocalError:
         wordlist = []
+
     # count the number of times a word appears in the text:
     worddictionary = {}
 
