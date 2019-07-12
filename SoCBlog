@@ -256,3 +256,6 @@ Yesterday evening I attended a workshop at Le Wagon. The workshop focused on get
 The second half of the evening dived into Figma and this could be very useful to me. If I go ahead with building a website/app, then this is a great tool to build a prototype and get it tested. It is really impressive. Not sure how much the 'free' level offers but it might even be worthwhile getting a paid version.
 The Udemy tutorial is going well and I really feel I get insight into how things are connected in Django. I have finished the 5th section after starting the entire website project anew. Now we are getting to section 6 on the Virtual Private Server, where it went wrong last time.  The Digital Ocean part should not be a problem: that server is up and running. The Postgres and venv part should not be a problem either. But Gunicorn ... let's see.
 
+July 12:
+So far I have done the major part of the Udemy tutorial (59 out of 82 units). The website has been built in principle, but the hosting is now the real challenge. With a new DigitalOcean server, a newly installed Postgres database plus the new project setup I expected to be able to move forward and get things running. 
+
