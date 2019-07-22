@@ -259,3 +259,5 @@ The Udemy tutorial is going well and I really feel I get insight into how things
 July 12:
 So far I have done the major part of the Udemy tutorial (59 out of 82 units). The website has been built in principle, but the hosting is now the real challenge. With a new DigitalOcean server, a newly installed Postgres database plus the new project setup I expected to be able to move forward and get things running. 
 
+July 22:
+I have completed 71 out of 82 units of the tutorial. The second website project was more demanding but it went OK when I restarted the project. I am understanding more and more how all the parts fit together: Django, PostgreSQL, DigOcean server. It is clear from the third project that I am working on now that I am understanding things better. With my notes, I was able to start the new project, create an app, update the settings, create the homepage, create a basic view etc. It felt good to be able to grasp things faster in this third project.
