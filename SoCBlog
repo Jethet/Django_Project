@@ -316,3 +316,6 @@ The last few days I have struggled a bit more with Heroku. I went back to the Py
 
 September 12:
 Today I have gone through five tutorials on Git and GitHub. Using the GUI of Atom to work with GitHub is sooo much faster than using git add -A, git commit -m "...." and git push. But I need to know how to work with the command line, because I may end up in a situation where I cannot work with GitHub or Atom, and then I would be stuck. So these tutorials were good to go through. The tutorials produced by Corey Schafer are really valuable and I will continue to support this financially. So what's next? I want to get some understanding of using variables for secret keys etc. so I will go through a tutorial on that tomorrow. And then on to the next course.
+
+September 13:
+Today I start the Real Python tutorial Get Started with Django Part 1. Not sure what sequence I should follow in my learning path, there is so much to do. But for now, I think the best thing probably is to focus on backend and get some sort of routine there, before moving on to something else.
