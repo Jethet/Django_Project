@@ -340,3 +340,7 @@ The one big problem I see is how to check if the site works OK on mobile ... I w
 
 September 30:
 The website is finished in its first version, as far as I am concerned. Tomorrow I will start working to get it online. I will be attending a workshop on Relational Databases with SQL and Python tonight, really looking forward to that. I have not done a lot re. databases and want to know more. For the website the plan is to use PostgreSQL because I have used that before. I will see what is discussed tonight.
+
+October 1:
+The Relational Database workshop was a disappointment but I received some material so maybe that is useful.
+The website is online!! I managed to get it deployed with Heroku this morning. There are one or two pictures that do not load, which is strange because the code is exactly the same as for the other pictures. So far, I have not been able to get the Heroku url linked to my elevador.es domain name but I will get some help on that. It looks very good, I am happy with it.
